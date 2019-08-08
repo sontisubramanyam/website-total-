@@ -1,0 +1,298 @@
+@media (min-width: 992px) {
+    .navbar li {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+.dropdownsecond:hover .dropdown-menutwo {
+    display: block;
+    margin-top: 0;
+}
+/* slider */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.load {
+    animation: slide 2s;
+}
+
+.slider {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 85vh;
+    animation: slide 40s infinite;
+}
+
+
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba (0, 0, 0, 0.5);
+}
+
+.principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.webtext {
+    font-size: 70px;
+    margin-top: 27%;
+}
+
+.bgtext {
+    font-size: 20px;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url('./imgs/bgimg.jpg');
+
+    }
+
+    20% {
+        background-image: url('./imgs/bgimg1.jpg');
+    }
+
+    20% {
+        background-image: url('./imgs/bgimg2.jpg');
+    }
+
+    30% {
+        background-image: url('./imgs/bgimg3.jpg');
+    }
+
+    60% {
+        background-image: url('./imgs/bgimg4.jpg');
+    }
+
+    80.1% {
+        background-image: url('./imgs/bgimg5.png');
+    }
+
+    100% {
+        background-image: url('./imgs/bgimg6.jpg')
+    }
+}
+
+
+/* first gallery */
+.gallery {
+    width: 100%;
+    margin-top: 5%;
+    font-family: sans-serif;
+    background-color: #fff;
+
+}
+
+.text {
+    background: #0062cc;
+    color: #fff;
+    width: 186px;
+    font-size: 24px;
+    padding: 6px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.text::after {
+    content: '';
+    border-top: 40px solid #0062cc;
+    border-right: 40px solid transparent;
+    position: relative;
+    left: 48px;
+    top: 34px;
+}
+
+.gallerymain {
+    margin-top: 30px;
+}
+
+.gimgone,
+.gimgtwo,
+.gimgthree,
+.gimgfour {
+    width: 100%;
+}
+
+.product-bottom .fa {
+    color: #28a745;
+    font-size: 10px;
+}
+
+.watchname {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.watchprice {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+
+.product-top:hover .overlay {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+.overlay .fa {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-bottom: 5%;
+}
+
+.secgimg {
+    display: block;
+}
+
+.secgthumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.secgimg {
+    width: 100%;
+}
+
+.galrytwo {
+    margin-bottom: 5%;
+}
+
+/* gallery three */
+.gtimg {
+    border-right: 2px solid white;
+}
+.gallthree {
+    background-color: rgba(0,0,0,.075);
+    width: 100% !important;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+    
+}
+.gallthree p {
+ text-align: center;
+}
+
+
+  
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+/* @media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {} */
+
+
+/*---Firefox Bug Fix --*/
+/* .carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+} */
+
+/*--- Fixed Background Image --*/
+/* figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0 !important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+/* #fixed {
+    background-image: url('img/mac.png');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+} */
+
+/*--- Bootstrap Padding Fix --*/
+/* [class*="col-"] {
+    padding: 1rem;
+} */
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
